@@ -1,0 +1,21 @@
+
+        .body
+        {
+            background-color: rgb(45, 55, 70);
+            font-family:sans-serif;
+            font-size: 18;
+            align-content: center;
+        }
+
+        .title-row
+        {
+            padding: 40px;
+            margin: 40px;
+            border: 40px;
+            background-color: rgb(32, 114, 168);
+        }
+
+        .title-text
+        {
+            text-align: center;
+        }
