@@ -9,13 +9,57 @@
 
         .title-row
         {
-            padding: 40px;
+            padding: 1px;
             margin: 40px;
-            border: 40px;
-            background-color: rgb(32, 114, 168);
+            margin-left: 500px;
+            margin-right: 500px;
+            /* border-radius laver en blød kant på hjørner. */
+            border-radius: 10px;
+            background-color: rgb(25, 37, 46);
         }
 
-        .title-text
+        .title-tekst
         {
             text-align: center;
+            font-family:initial;
+            font-size: 50px;
+            color: rgb(255, 197, 7);
+        }
+
+        .grid-container 
+        {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            background-color: #2196F3;
+            padding: 10px;
+        }
+
+        .grid-item 
+        {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .øverste-row
+        {
+            flex-direction: row;
+        }
+
+        .øverste-row-overskrift-1
+        {
+            text-align: center;
+            font-family:initial;
+            font-size: 30px;
+            color: rgb(255, 197, 7); 
+        }
+
+        .øverste-row-tekst-1
+        {
+            text-align: center;
+            margin: 20px;
+            padding: 20px;
+            background-color: rgb(0, 255, 255);
         }
