@@ -10,9 +10,12 @@
         .title-row
         {
             padding: 1px;
-            margin: 40px;
-            margin-left: 500px;
-            margin-right: 500px;
+            margin: auto;
+            width: auto;
+            max-width: 410px;
+            min-width: none;
+            /* margin-left: 500px; */
+            /* margin-right: 500px; */
             /* border-radius laver en blød kant på hjørner. */
             border-radius: 10px;
             background-color: rgb(25, 37, 46);
@@ -29,18 +32,29 @@
         .grid-container 
         {
             display: grid;
-            grid-template-columns: auto auto auto;
-            background-color: #2196F3;
+            grid-template-columns: repeat(3, 1fr);
+            background-color: rgb(25, 37, 46);
             padding: 10px;
+            margin: 10px;
+        }
+
+        .grid-item-overskrift
+        {
+            font-family:initial;
+            text-align: center;
+            font-size: 25px;
+            color: rgb(255, 197, 7);
+            background-color: rgb(25, 37, 46);
         }
 
         .grid-item 
         {
-            background-color: rgba(255, 255, 255, 0.8);
-            border: 1px solid rgba(0, 0, 0, 0.8);
+            background-color: rgb(25, 37, 46);
+            /* border: 1px solid rgba(0, 0, 0, 0.8); */
             padding: 20px;
-            font-size: 30px;
-            text-align: center;
+            font-size: 16px;
+            text-align: left;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
         .øverste-row
