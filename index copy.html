@@ -1,12 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <link rel="stylesheet" href="layout.css">
 
 
 <title>CV af Magnus Rasch</title>
 
 </head>
+<div class="wrapper">
+<header class="page-head">
+    <div class="checkbox-background">
+    <input type="checkbox" id="check">
+    <label class="checkbox-button" for="check">
+        <span class="layer"></span>
+        <span class="layer"></span>
+        <span class="layer"></span>
+    </label>
+    
+    <nav class="navigation">
+            <p class="nav-item">Navn: Magnus Rasch.</p>
+            <p class="nav-item">Født: 11/02/1998.</p>
+            <p class="nav-item">Adresse: Rantzausgade 40, 2.4, 2200 København N.</p>
+            <p class="nav-item">Telefon: 22 61 86 25.</p>
+            <p class="nav-item">E-mail: Mrasch1102@gmail.com.</p>
+    </nav>
+    <div class="checkbox-tekst">Kontaktoplysninger</div>
+</div>
+</header>
+
 <body class="body">
 
 <!-- Overskrift -->
@@ -24,7 +46,7 @@
     <div class="grid-item-box">
     <div class="grid-item-overskrift">Resumé</div>
     <div class="grid-item">
-    <p class="paragraph">Jeg valgte Data og kommunikations uddannelsen fordi jeg altid har været interesseret i computere og hvordan de fungere. Jeg vil bruge uddannelsen til at udvide min viden om computere, og bruge den viden til at vedligeholde pc’er og netværket i et firma.</p>
+    <div class="paragraph-long">Jeg valgte Data og kommunikations uddannelsen fordi jeg altid har været interesseret i computere og hvordan de fungere. Jeg vil bruge uddannelsen til at udvide min viden om computere, og bruge den viden til at vedligeholde pc’er og netværket i et firma.</div>
     </div>
     </div>
     <div class="grid-item-box">
@@ -38,80 +60,53 @@
     <div class="grid-item-box">
         <div class="grid-item-overskrift">Erhvervserfaring</div> 
         <div class="grid-item">
-        <p>Praktikplads i Elgiganten som IT-supporter 2019-2020.</p>
-        <p>Arbejdet i Fakta 2016-2016</p>
-        <p>Arbejdet i Rema 1000 2015-2016.</p>
+        <p class="paragraph">Praktikplads i Elgiganten som IT-supporter 2019-2020.</p>
+        <p class="paragraph">Arbejdet i Fakta 2016-2016</p>
+        <p class="paragraph">Arbejdet i Rema 1000 2015-2016.</p>
     </div>
 </div>
     
 </div>
 
 <!-- De tre nederste rækker -->
-<div>
+<div class="grid-container">
     
-    <div class="nederste-row">
-<div>
-    <h4 class="nederste-row-overskrift-1">Sprog</h4>
-        <div class="nederste-row-tekst-1">
-            <p>Dansk – Modersmål</p>
-            <p>Svensk - lavt</p>
-            <p>Norsk - lavt</p>
-            <p>Engelsk – Højt</p>
-            
-
-        </div>
-    </div>
-
-    <div>
-        <h4 class="nederste-row-overskrift-2">IT-erfaring</h4>
-        <div class="nederste-row-tekst-2">
-            <p>Netværk – Cisco CCNA semester 1 – grundforløb 2 på TEC. Karakter: 12</p>
-            <p>OS Windows 7/8/10 – grundforløb 2 på TEC. Karakter: 10</p>
-            <p>Programmering Visual Studio C# - grundforløb 2 på TEC. Karakter: 10</p>
-            <p>Kendskab til Windows 7/8/10 - installation, opgradering, grundlæggende filsikkerhed og administration af styresystemets sikkerhedspolitikker.</p>
-            </div>
-        </div>
-
-<div>
-    <h4 class="nederste-row-overskrift-3">Personlige Kvalifikationer</h4>
-        <div class="nederste-row-tekst-3">
-
-<p>Glad</p>
-<p>Imødekommende</p>
-<p>Hjælpsom</p>
-<p>Omhyggelig</p>
-<p>Sjov</p>
-<p>Engageret</p>
-<p>Tålmoddig</p>
-
-</div>
+    <div class="grid-item-box">
+    <div class="grid-item-overskrift">Sprog</div>
+    <div class="grid-item">
+        <p class="points-paragraph">Dansk – Modersmål</p>
+        <p class="points-paragraph">Svensk - lavt</p>
+        <p class="points-paragraph">Norsk - lavt</p>
+        <p class="points-paragraph">Engelsk – Højt</p>
     </div>
     </div>
-</div>
-
-<!-- Min accordion til kontaktoplysninger  -->
-
-<div class="accordion p-xl-5 p-lg-3 p-md-2 p-sm-5 paragraph px-3 px-md-5 m-xl-2 m-lg-3 m-md-1 mx-md-4 m-sm-2 m-1 mx-4" id="accordionExample">
-    <div class="accordion-item bg-dark">
-      <h2 class="accordion-header" id="headingOne">
-        <button class="accordion-button bg-dark text-warning fontstyle" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          Kontakt Oplysninger</button>
-      </h2>
-      <div id="collapseOne" class="accordion-collapse collapse hide" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-        <div class="accordion-body text-warning bg-dark">
-            <p>Navn: Magnus Rasch.</p>
-            <p>Født: 11/02/1998.</p>
-            <p>Adresse: Rantzausgade 40, 2.4, 2200 København N.</p>
-            <p>Telefon: 22 61 86 25.</p>
-            <p>E-mail: Mrasch1102@gmail.com.</p>
-        </div>
-      </div>
+    <div class="grid-item-box">
+        <div class="grid-item-overskrift">IT-erfaring</div> 
+        <div class="grid-item">
+            <p class="paragraph">Netværk – Cisco CCNA semester 1 – grundforløb 2 på TEC. Karakter: 12</p>
+            <p class="paragraph">OS Windows 7/8/10 – grundforløb 2 på TEC. Karakter: 10</p>
+            <p class="paragraph">Programmering Visual Studio C# - grundforløb 2 på TEC. Karakter: 10</p>
+            <p class="paragraph">Kendskab til Windows 7/8/10 - installation, opgradering, grundlæggende filsikkerhed og administration af styresystemets sikkerhedspolitikker.</p>
+    </div>
+    </div>
+    <div class="grid-item-box">
+        <div class="grid-item-overskrift">Personlige Kvalifikationer</div> 
+        <div class="grid-item">
+            <p class="points-paragraph">Glad</p>
+            <p class="points-paragraph">Imødekommende</p>
+            <p class="points-paragraph">Hjælpsom</p>
+            <p class="points-paragraph">Omhyggelig</p>
+            <p class="points-paragraph">Sjov</p>
+            <p class="points-paragraph">Engageret</p>
+            <p class="points-paragraph">Tålmoddig</p>
     </div>
 </div>
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<footer class="page-foot"></footer>
+</div>
 </body>
+
 
 </html>
