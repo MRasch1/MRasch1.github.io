@@ -232,12 +232,12 @@
             .checkbox-button::after
         {
             content:"";
-            padding: 20px;
-            width: 208px;
-            height: 54px;
             position: absolute;
-            left: 120px;
+            left: 0px;  
             top: -15px;
+            padding: 20px;
+            height: 100px;
+            width:  995px;
         }
 
             #check:checked ~.navigation 
