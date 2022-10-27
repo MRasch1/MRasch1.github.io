@@ -86,7 +86,7 @@
 
         .navigation {
             position:absolute;
-            top: 100%;
+            top: 120%;
             left: 0;
             right: 0;
             background-color:  rgb(25, 37, 46);
@@ -223,8 +223,9 @@
                 display:flex;
                 align-content: center;
                 background-color:rgb(25, 37, 46);
-                padding: 10px;
+                padding: 20px;
                 margin: auto;
+                width: 432px;
                 margin-top: 10px;
                 border-radius: 10px;
             }
@@ -236,8 +237,8 @@
             left: 0px;  
             top: -15px;
             padding: 20px;
-            height: 100px;
-            width:  995px;
+            height: 150px;
+            width:  940px;
         }
 
             #check:checked ~.navigation 
@@ -246,14 +247,19 @@
             flex-wrap: wrap;
             /* justify-content: space-evenly; */
             align-content:flex-start;
-            padding: 10px 10px;
+            padding: 420px 60px;
             /* z-index: 1; */
+            }
+
+            .navigation 
+            {    
+                top: 150%;
             }
 
             .nav-item {
                 padding: 30px;
                 color: rgb(255, 197, 7);
-                font-size: 15px;
+                font-size: 30px;
                 text-decoration: none;
                 font-family: Arial, Helvetica, sans-serif;
             }
@@ -261,13 +267,36 @@
             .title-row
         {
             padding: 1px;
-            margin: 10px auto;
+            margin: 30px auto;
             width:  auto;
             max-width: 461px;
             min-width: none;
             border-radius: 10px;
             background-color: rgb(25, 37, 46);
         }
+
+        .paragraph-long
+        {
+            font-size: 23px;
+        }
+
+        .points-paragraph
+        {
+            font-size: 20px;
+            line-height: 0.4;
+            text-align: center;
+        }
+
+        .paragraph
+        {
+            font-size: 22px;
+        }
+
+        .grid-item-overskrift
+        {
+            font-size: 40px;
+        }
+        
 
         .grid-container 
         {
