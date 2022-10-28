@@ -306,3 +306,17 @@
         }
 
         }
+
+        @media screen and (max-width: 784px)
+        {
+            .paragraph
+        {
+            font-size: 17px;
+        }
+
+        .paragraph-long
+        {
+            font-size: 17px;
+        }
+
+        }
