@@ -24,16 +24,18 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
-                  
+
+
       - name: Use Node.js 20
-      uses: actions/setup-node@v2
-      with:
-      node-version: '20'
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'  # Latest Node.js LTS version
 
       - name: Install dependencies
-      run: npm install
+        run: npm install
 
       - name: Build Angular app
-      run: npm run build -- --base-href /gn-pages-workflow/
+        run: npm run build -- --base-href /gn-pages-workflow/
+
 
       
