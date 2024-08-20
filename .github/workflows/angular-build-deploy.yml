@@ -31,11 +31,16 @@ jobs:
         with:
           node-version: '20'  # Latest Node.js LTS version
 
+      - name: Change to docs directory
+        run: cd docs
+
       - name: Install dependencies
         run: npm install
+        working-directory: ./docs
 
       - name: Build Angular app
         run: npm run build -- --base-href /gn-pages-workflow/
+        working-directory: ./docs
 
 
       
