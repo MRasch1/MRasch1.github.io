@@ -39,8 +39,30 @@ jobs:
         working-directory: ./docs
 
       - name: Build Angular app
-        run: npm run build -- --base-href /gn-pages-workflow/
+        run: npm run build -- --base-href /gh-pages-workflow/
         working-directory: ./docs
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: "dist/gh-pages-workflow/browser/"
+
+    # Deployment job
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+  # Grant Github Token
+    permissions:
+      pages: write
+      id-token: write
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
 
 
       
