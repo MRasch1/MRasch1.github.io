@@ -45,7 +45,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "./docs/dist/your-angular-app"  # Replace "your-angular-app" with the actual output directory name
+          path: "./docs/src/_site"  # Replace "your-angular-app" with the actual output directory name
 
   deploy:
     needs: build
