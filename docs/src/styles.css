@@ -1,1 +1,322 @@
-/* You can add global styles to this file, and also import other style files */
+
+.body
+{
+    background-color: rgb(45, 55, 70);
+    margin: 0%;
+    padding: 0%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+label[for="check"] {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 80px;
+    height: 40px;
+    width: 50px;
+    background-color: transparent;
+    /* border: solid 1px #000; */
+}
+
+.layer {
+    height: 4px;
+    background-color: rgb(255, 197, 7);
+}
+
+
+#check {
+    display: none;
+}
+
+.checkbox-button::after
+{
+    content:"";
+    padding: 20px;
+    width: 218px;
+    height: 54px;
+    position: absolute;
+    left: 22px;
+    top: -15px;
+}
+
+.checkbox-background
+{
+    display:flex;
+    align-content: left;
+    background-color:rgb(25, 37, 46);
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+#check:checked ~.navigation
+{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-evenly; */
+    align-content:flex-start;
+    padding: 135px 100px;
+    /* z-index: 1; */
+}
+
+.checkbox-tekst
+{
+    padding: 10px;
+    font-size: 20px;
+    color: rgb(255, 197, 7);
+}
+
+.page-head, .page-foot
+{
+    background-color: rgb(45, 55, 70);
+    height: 70px;
+}
+
+.page-head {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+}
+
+.navigation {
+    position:absolute;
+    top: 120%;
+    left: 0;
+    right: 0;
+    background-color:  rgb(25, 37, 46);
+    display: none;
+}
+
+.nav-item {
+    padding: 30px;
+    color: rgb(255, 197, 7);
+    font-size: 1.5em;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.title-row
+{
+    padding: 1px;
+    margin: auto;
+    width: auto;
+    max-width: 410px;
+    min-width: none;
+    border-radius: 10px;
+    background-color: rgb(25, 37, 46);
+}
+
+.title-tekst
+{
+    text-align: center;
+    font-family:initial;
+    font-size: 40px;
+    color: rgb(255, 197, 7);
+}
+
+.grid-container
+{
+    display: grid;
+    align-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: transparent;
+    padding: 10px;
+    margin: 5px;
+}
+
+.grid-item-overskrift
+{
+    font-family:initial;
+    text-align: center;
+    padding: 12px;
+    margin: 12px;
+    border-radius: 10px;
+    font-size: 25px;
+    color: rgb(255, 197, 7);
+    background-color: rgb(25, 37, 46);
+}
+
+.grid-item
+{
+    background-color: rgb(25, 37, 46);
+    height: 200px;
+    overflow:hidden;
+    padding: 20px;
+    margin: 10px;
+    font-size: 16px;
+    color: rgb(255, 197, 7);
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.paragraph
+{
+    padding: 1px;
+    margin: 1px;
+}
+
+.points-paragraph
+{
+    line-height: 0.8;
+}
+
+.paragraph-long
+{
+    line-height: 2.2;
+}
+
+
+
+@media screen and (max-width: 1255px)
+{
+
+.grid-container
+{
+    display: grid;
+    align-content: center;
+    grid-template-columns: repeat(1, 1fr);
+    background-color: transparent;
+    padding: 10px;
+    margin: 5px;
+}
+
+.paragraph
+{
+    margin: 7px;
+}
+
+#check:checked ~.navigation
+{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-evenly; */
+    align-content:flex-start;
+    padding: 65px 50px;
+    /* z-index: 1; */
+}
+
+
+}
+
+@media screen and (max-width: 550px)
+{
+
+    .paragraph
+{
+    margin: 1px;
+}
+
+}
+
+@media screen and (max-width: 995px)
+{
+    .checkbox-background
+    {
+        display:flex;
+        align-content: center;
+        background-color:rgb(25, 37, 46);
+        padding: 20px;
+        margin: auto;
+        width: 432px;
+        margin-top: 10px;
+        border-radius: 10px;
+    }
+
+    .checkbox-button::after
+{
+    content:"";
+    position: absolute;
+    left: 0px;
+    top: -15px;
+    padding: 20px;
+    height: 150px;
+    width:  940px;
+}
+
+    #check:checked ~.navigation
+    {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-evenly; */
+    align-content:flex-start;
+    padding: 420px 60px;
+    /* z-index: 1; */
+    }
+
+    .navigation
+    {
+        top: 150%;
+    }
+
+    .nav-item {
+        padding: 30px;
+        color: rgb(255, 197, 7);
+        font-size: 30px;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .title-row
+{
+    padding: 1px;
+    margin: 30px auto;
+    width:  auto;
+    max-width: 461px;
+    min-width: none;
+    border-radius: 10px;
+    background-color: rgb(25, 37, 46);
+}
+
+.paragraph-long
+{
+    font-size: 23px;
+}
+
+.points-paragraph
+{
+    font-size: 20px;
+    line-height: 0.4;
+    text-align: center;
+}
+
+.paragraph
+{
+    font-size: 22px;
+}
+
+.grid-item-overskrift
+{
+    font-size: 40px;
+}
+
+
+.grid-container
+{
+    background-color: transparent;
+    padding: 1px;
+    margin: 1px;
+}
+
+}
+
+@media screen and (max-width: 784px)
+{
+    .paragraph
+{
+    font-size: 17px;
+}
+
+.paragraph-long
+{
+    font-size: 17px;
+}
+
+}
