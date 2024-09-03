@@ -36,7 +36,7 @@ jobs:
         working-directory: ./docs
 
       - name: Build Angular app
-        run:  npm run build -- --output-path=./dist --base-href /docs/
+        run:  npm run build -- --base-href /MRasch1.github.io/docs/src/
         working-directory: ./docs
 
       - name: Setup Pages
