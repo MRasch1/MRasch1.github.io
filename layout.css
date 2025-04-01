@@ -50,10 +50,12 @@ label[for="check"] {
 }
 
 #check:checked ~ .navigation {
-  max-height: 500px; /* Adjust this value based on content */
+    max-height: 500px;
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out, max-height 0.5s ease-out, visibility 0s linear 0s;
+    /* visibility updates immediately on open */
 }
 
 .checkbox-tekst {
@@ -76,18 +78,18 @@ label[for="check"] {
 }
 
 .navigation {
-  position: absolute;
-  top: 120%;
-  left: 0;
-  right: 0;
-  background-color: rgb(25, 37, 46);
-  max-height: 0;
-  opacity: 0;
-  visibility: hidden;
-  overflow: hidden;
-  transform: translateY(-10px); /* Moves up slightly */
-  transition: max-height 0.5s ease-out, opacity 0.5s ease-out,
-    transform 0.5s ease-out;
+    position: absolute;
+    top: 120%;
+    left: 0;
+    right: 0;
+    background-color: rgb(25, 37, 46);
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out, max-height 0.5s ease-out, visibility 0s linear 0.5s;
+    /* visibility delay ensures smooth fade-out */
 }
 
 .nav-item {
